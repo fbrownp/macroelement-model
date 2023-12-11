@@ -15,3 +15,5 @@ in this way we can accurately describe the displacements of foundations subjecte
 The main archive, called Macroelement_driver.py consists of the full implementation of a hypoplastic macroelement 
 with a separate model for uplift of foundations, it can be activated and deactivated by changing the input parameter "uplift_code" 
 from "Active" to "non-active". This mechanism allows to reproduce uplift of shallow foundations in a better way.
+
+The hypoplastic model is implemented in a Runge-Kutta Fehlberg integration scheme and its optimized to work with numba jit for smooth calculations.
